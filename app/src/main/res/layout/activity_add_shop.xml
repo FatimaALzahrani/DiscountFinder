@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddShopActivity">
+
+    <!-- عنوان الصفحة -->
+    <TextView
+        android:id="@+id/addShopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إضافة محل جديد"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- حقل اسم المحل -->
+    <EditText
+        android:id="@+id/shopNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="اسم المحل"
+        app:layout_constraintTop_toBottomOf="@id/addShopTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text" />
+
+    <!-- حقل موقع المحل -->
+    <EditText
+        android:id="@+id/shopLocationInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="الموقع"
+        app:layout_constraintTop_toBottomOf="@id/shopNameInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text" />
+
+    <!-- حقل الخصم -->
+    <EditText
+        android:id="@+id/shopDiscountInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="الخصم"
+        app:layout_constraintTop_toBottomOf="@id/shopLocationInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text" />
+
+    <!-- حقل مدة العرض -->
+    <EditText
+        android:id="@+id/shopDurationInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="مدة العرض"
+        app:layout_constraintTop_toBottomOf="@id/shopDiscountInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text" />
+
+    <!-- زر حفظ المحل -->
+    <Button
+        android:id="@+id/saveShopButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="حفظ"
+        app:layout_constraintTop_toBottomOf="@id/shopDurationInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

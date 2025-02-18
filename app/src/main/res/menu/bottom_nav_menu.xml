@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home_ic"
+        android:title="الصفحة الرئيسية" />
+    <item
+        android:id="@+id/menu_saved"
+        android:icon="@drawable/saved"
+        android:title="المحفوظات" />
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/person"
+        android:title="الملف الشخصي" />
+</menu>

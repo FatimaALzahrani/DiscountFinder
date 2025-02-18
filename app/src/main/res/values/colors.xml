@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#2D796D</color>
+    <color name="secondary">#2D796D</color>
+    <color name="grey">#FBFBFB</color>
+
+    <!-- Background colors -->
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="filterBackgroundColor">#FFFFFF</color>
+    <color name="editTextBackgroundColor">#FFFFFF</color>
+    <color name="spinnerBackgroundColor">#FFFFFF</color>
+
+    <!-- Text colors -->
+    <color name="titleColor">#2C3E50</color>
+    <color name="editTextTextColor">#2C3E50</color>
+    <color name="editTextHintColor">#95A5A6</color>
+    <color name="spinnerTextColor">#2C3E50</color>
+</resources>

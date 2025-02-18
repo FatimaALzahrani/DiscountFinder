@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371075383253",
+    "project_id": "discountfinder-1",
+    "storage_bucket": "discountfinder-1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371075383253:android:34f0225a28b6d5a39e475c",
+        "android_client_info": {
+          "package_name": "com.commerce.discountfinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc6Q9f1Q8RlL_9lHmVBQTcak9oD57kO0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

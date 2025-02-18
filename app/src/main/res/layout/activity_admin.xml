@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminActivity">
+
+    <!-- عنوان الصفحة -->
+    <TextView
+        android:id="@+id/adminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إدارة النظام"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- زر إدارة المحلات -->
+    <Button
+        android:id="@+id/manageShopsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="إدارة المحلات"
+        app:layout_constraintTop_toBottomOf="@id/adminTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- زر إدارة المستخدمين -->
+    <Button
+        android:id="@+id/manageUsersButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="إدارة المستخدمين"
+        app:layout_constraintTop_toBottomOf="@id/manageShopsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- زر عرض الإحصائيات (اختياري) -->
+    <Button
+        android:id="@+id/viewStatsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="عرض الإحصائيات"
+        app:layout_constraintTop_toBottomOf="@id/manageUsersButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

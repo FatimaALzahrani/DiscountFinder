@@ -1,0 +1,94 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="21dp"
+    app:cardElevation="8dp"
+    android:layoutDirection="ltr"
+    app:cardBackgroundColor="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <!-- التخطيط الأفقي يحتوي على مربع الخصم واسم المتجر -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <!-- مربع الخصم -->
+            <LinearLayout
+                android:id="@+id/discount_box"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:background="@drawable/discount_background"
+                android:padding="12dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/discount_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 minutes left until the show ends"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- اسم المتجر أسفل مربع الخصم -->
+            <TextView
+                android:id="@+id/store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Albaik"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="start" />
+            <TextView
+                android:id="@+id/store_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Albaik"
+                android:textSize="15sp"
+                android:layout_gravity="start" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/store_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:clipToOutline="true"
+            android:background="@drawable/rounded_image_background" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

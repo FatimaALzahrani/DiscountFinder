@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- اسم المحل -->
+        <TextView
+            android:id="@+id/shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم المحل"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- موقع المحل -->
+        <TextView
+            android:id="@+id/shopLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الموقع"
+            android:textSize="14sp"
+            android:textColor="#757575" />
+
+        <!-- خصم المحل -->
+        <TextView
+            android:id="@+id/shopDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="خصم: 20%"
+            android:textSize="16sp"
+            android:textColor="#FF4081" />
+
+        <!-- مدة العرض -->
+        <TextView
+            android:id="@+id/shopDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مدة العرض: أسبوع"
+            android:textSize="14sp"
+            android:textColor="#757575" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
